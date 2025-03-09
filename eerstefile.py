@@ -1,10 +1,11 @@
 from flask import Flask
 
-app = Flas(__name__)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return "Hell World!"
+  return 'Hell World!'
 
+app.run(host='0.0.0.0', port=8080)
 
-app.run(host='0.0.0.0', port=81)
+print("Hell world motherfucker")
